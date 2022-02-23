@@ -1,0 +1,25 @@
+.selector-number{
+    z-index:10;
+    input[type=number]{
+        width:25px;
+        text-align: right;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+    .plus-button,
+    .minus-button{
+        cursor:pointer;
+        border:none;   
+        width:20px;
+        padding: 3px 0px;
+    }
+    .plus-button{
+        background-color:lightskyblue;
+    }
+    .minus-button{
+        background-color:lightcoral;
+    }
+}

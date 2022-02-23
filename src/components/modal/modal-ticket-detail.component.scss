@@ -1,0 +1,43 @@
+$add-color: green;
+$cancel-color: darkred;
+
+.type-info{
+    label{ margin-right: 10px; }
+}
+
+.button-container{
+    width:60%;
+    margin:auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+    .add-button,
+    .cancel-button{
+        width: 90px;
+        cursor:pointer;
+        padding: 10px 0px;
+        background-color: transparent;
+        font-size: bold;
+        border-radius: 5px;
+        margin-bottom:20px;
+    }
+    .add-button{
+        border:1px solid $add-color;
+        color:$add-color;
+    
+        &:hover{
+            color:white;
+            background-color:$add-color;
+        }
+    }
+    .cancel-button{
+        border:1px solid $cancel-color;
+        color:$cancel-color;
+    
+        &:hover{
+            color:white;
+            background-color:$cancel-color;
+        }
+    }
+}

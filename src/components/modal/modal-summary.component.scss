@@ -1,0 +1,41 @@
+.modal-summary{
+    margin:auto;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom:50px;
+    .title{
+        color:orange;
+    }
+    table{
+        width:100%;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+
+        tr{
+            td,th{
+                margin:0px;
+                padding:2px 5px;
+            }
+            .name, 
+            .units{
+                text-align: center;
+            }
+            .price{ text-align:right; }
+        }
+        th{
+            background-color:orange;
+            padding:0px 10px;
+        }
+    }
+    .total-price{
+        width:100%;
+        text-align: right;
+        padding-right: 9px;
+        span{
+            padding-right: 7px;
+
+            b{ padding-right:15px; }
+        }
+    }
+}

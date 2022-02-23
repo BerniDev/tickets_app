@@ -1,0 +1,60 @@
+$confirm-color: green;
+$cancel-color: darkred;
+$main-color: orange;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+h1{
+    color: $main-color;
+}
+
+.button-container{
+  width:60%;
+  margin:auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+
+  .confirm-button,
+  .cancel-button,
+  .app-button{
+      width: 90px;
+      cursor:pointer;
+      padding: 10px 0px;
+      background-color: transparent;
+      font-size: bold;
+      border-radius: 5px;    
+  }
+  .confirm-button{
+      border:1px solid $confirm-color;
+      color:$confirm-color;
+
+      &:hover{
+          color:white;
+          background-color:$confirm-color;
+      }
+  }
+  .cancel-button{
+      border:1px solid $cancel-color;
+      color:$cancel-color;
+
+      &:hover{
+          color:white;
+          background-color:$cancel-color;
+      }
+  }
+  .app-button{
+      border:1px solid $main-color;
+      color:$main-color;
+
+      &:hover{
+          color:white;
+          background-color:$main-color;
+      }
+  }
+}
