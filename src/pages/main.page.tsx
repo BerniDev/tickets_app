@@ -23,7 +23,7 @@ export default function MainPage():JSX.Element{
      * de los eventos de la lista para mostrar el botón del carrito.*/
     useEffect(()=>{
         setIsTicketAdded(():boolean => {
-            const aTicketIsAdded = ticketsList && ticketsList.findIndex((ticket:Ticket) => {
+            const aTicketIsAdded = ticketsList?.findIndex((ticket:Ticket) => {
                 return ticket.units > 0;
             })
             return aTicketIsAdded >= 0;
@@ -34,7 +34,7 @@ export default function MainPage():JSX.Element{
         setShowSummary(true);
     }
 
-    const closeModal = () => {
+    const closeSummary = () => {
         setShowSummary(false);
     }
     
@@ -46,7 +46,7 @@ export default function MainPage():JSX.Element{
                 <button className="app-button" onClick={openSummary}>Chart</button>
             </div>
             : null}
-            {showSummary ? <ModalSummary height={'auto'}onCloseModal={closeModal}></ModalSummary> : null}
+            {showSummary ? <ModalSummary height={'auto'}onCloseModal={closeSummary}></ModalSummary> : null}
         </div>
     );
 }
